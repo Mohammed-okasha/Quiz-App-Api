@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Start Quiz App Project */
+    .quiz-app {
+        max-width: 700px;
+        width: 100%;
+        background-color: #fafafa;
+        border: 1px solid rgb(0 0 0 / 20%);
+        padding: 1.25rem;
+        border-radius: 3px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @media(max-width: 767px) {
+        .quiz-app {
+            width: calc(100% - 30px);
+        }
+
+    }
+
+    /* quiz-app Info *****/
+    .quiz-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 5px;
+        border-bottom: 1px solid rgb(0 0 0 / 20%);
+        padding-bottom: 10px;
+    }
+
+    .quiz-info .category span {
+        color: #0278d8;
+        font-weight: bold;
+    }
+    
+    .quiz-info .count .num {
+        color: green;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    /* quiz-app Body *****/
+    .quiz-app .quiz-area {
+        margin-top: 15px;
+    }
+    
+    .quiz-app .quiz-area .question-title {
+        color: #202020;
+        margin-bottom: 15px;
+        text-transform: capitalize;
+    }
+
+    @media(max-width: 400px) {
+        .quiz-app .quiz-area .question-title {
+            line-height: 1.4;
+            font-size: 17px;
+        }
+    }
+
+    .quiz-app .ansewrs-container .ansewr {
+        background-color: #6abcff0f;
+        border: 1px solid #008cff90;
+        padding: 10px;
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .quiz-app .ansewrs-container .ansewr:not(:last-child) {
+        margin-bottom: 15px;
+    }
+    
+    .quiz-app .ansewrs-container .ansewr input[type="radio"] {
+        accent-color: green;
+        cursor: pointer;
+    }
+    
+    .quiz-app .ansewrs-container .ansewr input[type="radio"]:checked + label {
+        color: green;
+    }
+    
+    .quiz-app .ansewrs-container.ansewr label {
+        color: #202020;
+        cursor: pointer;
+    }
+    
+    .submit-btn {
+        margin-top: 1rem;
+        background-color: #007BFF;
+        color: #fff;
+        padding: 10px 1.25rem;
+        font-size: 15px;
+        letter-spacing: .5px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        width: 100%;
+    }
+    /* quiz-app Footer *****/
+    .quiz-app .bullets {
+        border-top: 1px solid rgb(0 0 0 / 30%);
+        padding-top: 15px;
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px 15px;
+    }
+    @media(max-width: 370px) {
+        .quiz-app .bullets {
+            justify-content: center;
+        }
+    }
+
+    .quiz-app .bullets .spans span {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #dddddd;
+        transition: .3s;
+    }
+    .quiz-app .bullets .spans span.active {
+        background-color: #007BFF;
+    }
+    
+    .quiz-app .bullets .conut-down {
+        background-color: #008cff76;
+        padding: 10px;
+        text-transform: capitalize;
+        border-radius: 3px;
+    }
+    .quiz-app .bullets .spans span:not(:last-of-type) {
+        margin-right: 3px;
+    }
+    
+    .quiz-app .bullets .conut-down .text {
+        color: #005fad;
+        font-weight: bold;
+    }
+    
+    .quiz-app .conut-down .minutes {
+        background-color: #333;
+        color: #fff;
+        padding: 5px 10px;
+        margin-left: 5px;
+    }
+    
+    .quiz-app .conut-down .seconds {
+        background-color: #333;
+        color: #fff;
+        padding: 5px 10px;
+    }
+    
+     /* Add Show Calss To results Div */
+    .show {
+        background-color: #fff;
+        border: 1px solid #008cff90;
+        padding: 10px;
+        margin-top: 15px;
+        border-radius: 3px;
+        text-transform: capitalize;
+    }
+    
+    .results strong {
+        color: #007BFF;
+        font-weight: bold;
+    }
+    /* End Quiz App Project */
+    
